@@ -10,3 +10,7 @@ function setBarHeights() {
     bars[i].style.height = `${data[i].amount}px`;
   }
 }
+
+// function show prices on hover
+
+// function make current day blue
