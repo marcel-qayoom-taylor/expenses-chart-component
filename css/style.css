@@ -36,15 +36,13 @@ body {
 
 .balanceBar img{
   grid-row: span 2;
-  justify-self: right;
-
 }
 
 .balanceBar span:first-child {
   color: hsl(27, 66%, 92%);
 }
 
-.price {
+.balanceBar .price {
   font-size: 24px;
 }
 
@@ -56,13 +54,12 @@ body {
 
 .spending > span {
   font-size: 20px;
-  font-weight: 700;
 }
 
 #barContainer {
   display:flex;
   gap: 15px;
-  padding: 40px 0px;
+  padding: 50px 0px;
 }
 
 .bar {
@@ -84,6 +81,40 @@ body {
   position: relative;
   top: 20px;
   font-size: 12px;
+  color: gray;
+}
+
+.divider {
+  background-color: rgba(211, 211, 211, 0.608);
+  height: 1px;
+}
+
+#summary {
+  padding: 30px 0 10px 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-row: auto auto auto;
+}
+
+#summary .price {
+  grid-row: span 2;
+  font-size: 30px;
+}
+
+
+
+
+/* Generic */
+
+.justify-right {
+  justify-self: right;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.grey {
   color: gray;
 }
 
