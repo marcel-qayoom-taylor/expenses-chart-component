@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
-
 html, body {
   margin: 0;
   height: 100%;
@@ -27,19 +26,18 @@ body {
 .balanceBar {
   background-color: hsl(10, 79%, 65%);
   width: auto;
-  padding: 20px;
+  padding: 20px 25px;
   border-radius: 10px;
   color: white;
   display: grid;
   grid-template-columns: auto auto;
   grid-row: auto auto;
-  grid-
 }
 
 .balanceBar img{
   grid-row: span 2;
   justify-self: right;
-  
+
 }
 
 .balanceBar span:first-child {
@@ -52,8 +50,41 @@ body {
 
 .spending {
   background-color: white;
-  padding: 20px;
+  padding: 20px 25px;
   border-radius: 10px;
+}
+
+.spending > span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#barContainer {
+  display:flex;
+  gap: 15px;
+  padding: 40px 0px;
+}
+
+.bar {
+  background-color: hsl(10, 79%, 65%);
+  width: 45px;
+  height: 100px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+}
+
+.bar:hover {
+  background-color: hsl(186, 34%, 60%);
+}
+
+.bar > span {
+  position: relative;
+  top: 20px;
+  font-size: 12px;
+  color: gray;
 }
 
 .attribution { font-size: 11px; text-align: center; }
