@@ -53,7 +53,7 @@ body {
 
 .balanceBar img{
   grid-row: span 2;
-  width: 30%;
+  width: 35%;
   align-self: center;
 }
 
@@ -80,16 +80,20 @@ body {
   align-items: flex-end;
   justify-content: space-between;
   gap: 15px;
-  padding: 40px 0px 50px 0;
+  padding: 30px 0px 50px 0;
+  height: 175px;
 }
 
 #barContainer > div {
   width: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bar {
   background-color: hsl(10, 79%, 65%);
-  
+  width: 100%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -119,6 +123,7 @@ body {
   color: white;
   border-radius: 5px;
   margin-bottom: 10px;
+  padding: 6px;
   display: none;
 }
 
