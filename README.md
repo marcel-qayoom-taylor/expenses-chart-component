@@ -1,4 +1,4 @@
-# Frontend Mentor - Expenses Chart Component
+# Expenses Chart Component
 
 This is a challenge from [Frontend Mentor](https://www.frontendmentor.io/) to create the following component:
 
