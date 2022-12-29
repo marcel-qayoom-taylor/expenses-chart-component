@@ -113,10 +113,6 @@ body {
   color: gray;
 }
 
-#wed .bar {
-  background-color: hsl(186, 34%, 60%);
-}
-
 .priceTag {
   text-align: center;
   background-color: #30221e;

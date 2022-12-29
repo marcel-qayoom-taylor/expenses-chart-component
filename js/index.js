@@ -1,5 +1,7 @@
-let bars = document.getElementsByClassName("bar");
 let tags = document.getElementsByClassName("priceTag");
+let day = moment().format('ddd').toLowerCase();
+let bars = document.querySelectorAll(".bar");
+
 fetch("./data.json")
   .then(response => response.json())
   .then(data => {
@@ -11,6 +13,15 @@ fetch("./data.json")
     }
   });
 
+// Make current day blue
+for (let i = 0; i < bars.length; i++){
+  if (bars[i].children[0].innerText === day){
+    console.log(bars[i]);
+    bars[i].style.backgroundColor = "hsl(186, 34%, 60%)";
+    break;
+  }
+}
+
 function displayPriceTag(event, selector){
   if (event.type === "mouseover"){
     tags[selector].style.display = "block";
@@ -18,5 +29,3 @@ function displayPriceTag(event, selector){
     tags[selector].style.display = "none";
   }
 }
-
-// function make current day blue
