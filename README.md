@@ -40,7 +40,7 @@ Users can:
 
 
 ### Links
-- [Live Site](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt)
+- [Live Site](https://expenses-chart-component-marcel-qayoom-taylor.vercel.app/)
 
 ## My process
 
